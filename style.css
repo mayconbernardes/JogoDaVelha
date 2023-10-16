@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+
+   
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    max-width: 330px;
+    align-items: center;
+    justify-self: unset;
+}
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Define um z-index menor para colocar o vídeo no fundo */
+    object-fit: cover;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.reset {
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 200px;
+    height: 50px;
+    margin-top:0;
+    font-size: 20px;
+}
+.reset:hover {
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0 0 10px white;
+}
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    color: green; /* Cor do texto para vitória */
+    margin: 30px;
+}
